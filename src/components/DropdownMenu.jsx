@@ -7,10 +7,10 @@ export default function DropdownMenu() {
       <div className="absolute inset-0 opacity-[.1]">
         <img
           className="w-full h-full object-cover"
-          src="/images/menu2.jpg"
+          src="/images/menu.jpg"
           width={688}
           height={953}
-          alt="Dropdown menu background"
+          alt=""
         />
       </div>
     </div>

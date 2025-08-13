@@ -1,8 +1,8 @@
 export const navigate = [
     {
         id: "0",
-        title: "Main",
-        link: "#header",
+        title: "hero",
+        link: "#hero",
     },
     {
         id: "1",

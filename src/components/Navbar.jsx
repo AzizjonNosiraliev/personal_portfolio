@@ -38,11 +38,11 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 border-neutral-600 lg: lg:backdrop-blur-sm lg:bg-[#0a0011]/35 border-b ${
-        openMenu ? "bg-[#08000c]" : "bg-[#0a0011]/35 backdrop-blur-sm"
+      className={`fixed top-0 left-0 w-full z-50 border-neutral-600:backdrop-blur-md lg:bg-[#000000]/70 ${
+        openMenu ? "bg-[#08000c]" : "bg-[#0a0011]/80 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
+      <div className="container mx-auto flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-5">
         <a
           href="#"
           className={`w-[12rem] xl:mr-8 text-4xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent ${monoton.className}`}
@@ -61,12 +61,15 @@ const Navbar = () => {
                 key={item.id}
                 href={item.link}
                 onClick={handleClick}
-                className={`block relative text-2xl text-neutral-400 transition-colors duration-400 ${openMenu ? "hover:text-white" : "hover:text-purple-500" } uppercase px-10 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:leading-5 lg:font-semibold xl:px-12 ${orbitron.className}`}
+                className={`block relative text-2xl text-[#fff] transition-colors duration-400 ${
+                  openMenu ? "hover:text-white" : "hover:text-purple-500"
+                } uppercase px-10 py-6 md:py-8 lg:-mr-0.25 lg:text-sm lg:leading-5 lg:font-semibold xl:px-12 ${
+                  orbitron.className
+                }`}
               >
                 {item.title}
               </a>
             ))}
-            
           </div>
           <DropdownMenu />
         </nav>
